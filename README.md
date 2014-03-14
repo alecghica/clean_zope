@@ -1,4 +1,4 @@
-<h1>Steps to install an clean zope </h1>
+<h1>Steps to install a clean zope </h1>
 $ cd clean_zope<br>
 $ virtualenv devel-venv<br>
 $ source devel-venv/bin/activate<br>
