@@ -1,0 +1,11 @@
+.installed.cfg
+.mr.developer.cfg
+bin/
+bootstrap.py
+devel-venv/
+develop-eggs/
+downloads/
+eggs/
+logs/
+parts/
+var/
