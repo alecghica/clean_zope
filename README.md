@@ -1,4 +1,4 @@
-<h1>Steps to install a clean zope </h1>
+<h1>Steps to install a clean zope with buildout </h1>
 $ virtualenv devel-venv<br>
 $ source devel-venv/bin/activate<br>
 $ curl -O http://downloads.buildout.org/2/bootstrap.py<br>
