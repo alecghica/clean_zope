@@ -1,3 +1,8 @@
+<h1>Prerequests</h1>
+$ sudo apt-get install python-dev
+$ sudo apt-get install curl
+$ sudo apt-get install subversion
+
 <h1>Steps to install a clean zope with buildout </h1>
 $ virtualenv devel-venv<br>
 $ source devel-venv/bin/activate<br>
