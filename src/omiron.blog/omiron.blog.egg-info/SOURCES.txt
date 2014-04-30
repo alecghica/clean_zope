@@ -1,0 +1,14 @@
+README.txt
+setup.py
+omiron/__init__.py
+omiron.blog.egg-info/PKG-INFO
+omiron.blog.egg-info/SOURCES.txt
+omiron.blog.egg-info/dependency_links.txt
+omiron.blog.egg-info/entry_points.txt
+omiron.blog.egg-info/namespace_packages.txt
+omiron.blog.egg-info/not-zip-safe
+omiron.blog.egg-info/requires.txt
+omiron.blog.egg-info/top_level.txt
+omiron/blog/__init__.py
+omiron/blog/tests.py
+omiron/blog/zope2.py
