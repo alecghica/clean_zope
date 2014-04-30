@@ -9,6 +9,9 @@ from omiron.blog.interfaces import IBlogFolder
 
 
 class BlogFolder(BTreeFolder2Base, SimpleItem):
+    """A blog folder
+    """
+
     implements(IBlogFolder)
 
     meta_type = 'Blog Folder'
@@ -27,5 +30,10 @@ def manage_add_blog_folder(factory, id, REQUEST=None):
     import ipdb;ipdb.set_trace() ### XXX BREAKPOINT
     parent = factory.Destination()
 
+    form = (REQUEST.form if REQUEST is not None else {})
+    obj = BlogFolder()
+    obj.title = unicode(form.get('title', id))
+    obj._setId(id)
+    parent._setObject(id, obj)
     if REQUEST is not None:
         REQUEST.RESPONSE.redirect(parent.absolute_url() + '/manage_workspace')

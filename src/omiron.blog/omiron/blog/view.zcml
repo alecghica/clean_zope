@@ -1,0 +1,17 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:five="http://namespaces.zope.org/five"
+    i18n_domain="omiron">
+
+
+    <browser:page
+        name="addblogfolder"
+        for="zope.browser.interfaces.IAdding"
+        permission="omiron.BlogFolder"
+        class=".views.AddBlogFolder"
+        template="zpt/form.pt"
+        />
+
+  <include file="views.zcml" />
+</configure>

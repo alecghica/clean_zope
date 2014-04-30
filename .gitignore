@@ -9,4 +9,5 @@ eggs/
 logs/
 parts/
 var/
-.*.swp
+*.swp
+*.pyc

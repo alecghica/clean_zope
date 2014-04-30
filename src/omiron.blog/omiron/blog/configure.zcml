@@ -9,7 +9,7 @@
       class=".app.BlogFolder"
       meta_type="Blog Folder"
       permission="omiron.BlogFolder"
-      addview="add_blog_folder_html"
+      addview="addblogfolder"
       global="true"
       />
 
