@@ -6,7 +6,9 @@ from zope.browser.interfaces import IAdding
 from Products.PageTemplates.PageTemplateFile import PageTemplateFile
 from persistent.interfaces import IPersistent
 from omiron.blog.interfaces import IBlogFolder
+from omiron.blog.interfaces import IBlogEntry
 from omiron.blog.app import BlogFolder
+from omiron.blog.app import BlogEntry
 from zope.event import notify
 from zope.lifecycleevent import ObjectCreatedEvent
 from slugify import slugify
@@ -40,6 +42,24 @@ class Page(object):
             return self.context
 
         return parent
+
+
+class AddBlogEntry(Form, Page, PageAddForm):
+    form_fields = FormFields(IBlogEntry)
+    title = "Add a new blog entry"
+
+    def createAndAdd(self, data):
+        collection = BlogEntry()
+        collection.title = data['title']
+        notify(ObjectCreatedEvent(collection))
+        id = slugify(collection.title)
+        self.get_context()._setObject(id, collection)
+        collection.id = id
+        self._finished_add = True
+        return collection
+
+    def nextURL(self):
+        return self.context.absolute_url()
 
 
 class AddBlogFolder(Form, Page, PageAddForm):

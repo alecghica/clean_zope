@@ -13,5 +13,12 @@
         template="zpt/form.pt"
         />
 
-  <include file="views.zcml" />
+    <browser:page
+        name="addblogentry"
+        for="zope.browser.interfaces.IAdding"
+        permission="omiron.BlogFolder"
+        class=".views.AddBlogEntry"
+        template="zpt/form.pt"
+        />
+
 </configure>

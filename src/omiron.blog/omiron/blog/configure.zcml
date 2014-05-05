@@ -13,4 +13,13 @@
       global="true"
       />
 
+  <five:registerClass 
+      class=".app.BlogEntry"
+      meta_type="Blog Entry"
+      permission="omiron.BlogFolder"
+      addview="addblogentry"
+      global="true"
+      />
+
+  <include file="views.zcml" />
 </configure>

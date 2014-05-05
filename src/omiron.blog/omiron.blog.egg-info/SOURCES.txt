@@ -10,5 +10,8 @@ omiron.blog.egg-info/not-zip-safe
 omiron.blog.egg-info/requires.txt
 omiron.blog.egg-info/top_level.txt
 omiron/blog/__init__.py
+omiron/blog/app.py
+omiron/blog/interfaces.py
 omiron/blog/tests.py
+omiron/blog/views.py
 omiron/blog/zope2.py
