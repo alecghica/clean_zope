@@ -1,0 +1,6 @@
+salut !
+salut !
+salut !
+<div metal:define-macro="form">
+test test ovidiu
+</div>
