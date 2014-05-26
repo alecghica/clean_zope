@@ -19,6 +19,7 @@ class Form(object):
 
     @property
     def form_macros(self):
+        #return PageTemplateFile('zpt/form_ovidiu.zpt', globals())
         return default_page_template(self.context)
 
     def get_context(self):

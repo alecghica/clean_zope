@@ -3,6 +3,7 @@
   <head>
         <title><metal:macro define-macro="title"></metal:macro></title>
   </head>
+  <!-- do you need for the root from body --> 
   <body tal:define="root view/get_root">
         <div metal:define-slot="content"></div>
   </body>
