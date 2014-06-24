@@ -9,15 +9,23 @@ server.
 There is one configuration available for running this buildout::
  1. development (devel)
 
-<h1>Prerequests</h1>
-$ sudo apt-get install python-dev
-$ sudo apt-get install curl
-$ sudo apt-get install subversion
+Project name
+------------
+The project name is Clean Zope
 
-<h1>Steps to install a clean zope with buildout </h1>
-$ virtualenv devel-venv<br>
-$ source devel-venv/bin/activate<br>
-$ curl -O http://downloads.buildout.org/2/bootstrap.py<br>
-$ python bootstrap.py<br>
-$ bin/buildout -c devel.cfg<br>
-$ bin/instance<br>
+
+Prerequisites - System packages
+-------------------------------
+These should be installed by the sysadmin (needs root)::
+
+ $ sudo apt-get install python-dev curl subversion
+ 
+Build devel
+-------------
+::
+ $ virtualenv devel-venv
+ $ source devel-venv/bin/activate
+ $ curl -O http://downloads.buildout.org/2/bootstrap.py
+ $ python bootstrap.py
+ $ bin/buildout -c devel.cfg
+ $ bin/instance
