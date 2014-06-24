@@ -23,6 +23,7 @@ These should be installed by the sysadmin (needs root)::
 Build devel
 -------------
 ::
+
  $ virtualenv devel-venv
  $ source devel-venv/bin/activate
  $ curl -O http://downloads.buildout.org/2/bootstrap.py
