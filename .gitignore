@@ -9,5 +9,6 @@ eggs/
 logs/
 parts/
 var/
+src/
 *.swp
 *.pyc
